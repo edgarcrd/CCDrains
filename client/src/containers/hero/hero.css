@@ -1,0 +1,8 @@
+._hero {
+  background: url(../../assets/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  opacity: 0.6;
+  height: 600px;
+}
