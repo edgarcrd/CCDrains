@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 ._header {
   width: 1100px;
   margin-right: auto;
@@ -8,25 +10,59 @@
 
 .info__links {
   display: grid;
-  grid-template-columns: auto auto auto;
-  padding: 10px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 15px 0px;
+  border-bottom: 1px solid #71BF44;
 }
 
 .info__links a {
+  color: #39374d;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
   text-decoration: none;
-  color: black;
+  white-space: nowrap;
 }
 
-.info__links .text-right {
+.text-left {
+  text-align: left;
+}
+
+.text-right {
   text-align: right;
 }
 
-.info__links .text-center {
+.text-center {
   text-align: center;
 }
+
+.header_pin {
+  font-size: 16px;
+  color: #71BF44;
+}
+
+.mail_pin {
+  vertical-align: bottom;
+  font-size: 18px;
+  color: #71BF44;
+}
+
+
 
 @media (max-width: 1200px) {
   ._header {
     width: 900px;
   }
+
+  .info__links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  ._header {
+    display: none;
+  }
+
 }
