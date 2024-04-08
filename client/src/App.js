@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom';
 
 import { Footer, Hero, Header } from './containers'
 import { Navbar } from './components'
@@ -7,11 +8,11 @@ import './App.css'
 
 const App = () => {
   return (
-    <div>
+    <Router>
       <Header />
       <Navbar />
       <Hero />
-    </div>
+    </Router>
   )
 }
 
